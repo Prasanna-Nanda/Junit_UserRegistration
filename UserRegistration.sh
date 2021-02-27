@@ -32,6 +32,14 @@ public class UserRegistrationMain implements UserRegisterationInterface {
 		Pattern mobileFormatRegExp=Pattern.compile("(^[a-z]{3,}.)|([a-z]{3,})@([a-z]{2,}.[a-z]{2})|(.[a-z]{2})");
 
 
+                System.out.println("Enter Password");
+		Scanner scanner4=new Scanner(System.in);
+		String userInputPassword=scanner4.next();
+		
+		Pattern passwordRegExp=Pattern.compile("[A-Za-z0-9]{8,}");
+
+
+
     }
 
 }
