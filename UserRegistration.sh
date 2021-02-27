@@ -12,11 +12,19 @@ public class UserRegistrationMain implements UserRegisterationInterface {
         Pattern firstNameRegExp=Pattern.compile("(^[A-Z]{1})[a-z]{2,}");
         String userInput=scanner.next();
 
-  System.out.println("Enter Last Name:");
+        System.out.println("Enter Last Name:");
         Scanner scanner1=new Scanner(System.in);
         String userInputLastName=scanner1.next();
 
         Pattern lastNameRegExp=Pattern.compile("([A-Z]{1}[a-z]{2,}\s{0,}[A-Z]{1}[a-z]{2,})");
+
+                System.out.println("Enter EmailId");
+		Scanner scanner2=new Scanner(System.in);
+		String userInputEmailId=scanner2.next();
+		
+		Pattern emailIdRegExp=Pattern.compile("(^[a-z]{3,}.)|([a-z]{3,})@([a-z]{2,}.[a-z]{2})|(.[a-z]{2})");
+
+
 
     }
 
