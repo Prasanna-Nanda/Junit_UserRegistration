@@ -40,6 +40,14 @@ public class UserRegistrationMain implements UserRegisterationInterface {
 
 
 
+
+System.out.println("Enter Password one upper case:");
+		Scanner scanner5=new Scanner(System.in);
+		String userInputPasswordOneUpperCase=scanner5.next();
+		
+		Pattern passwordOneUpperCaseRegExp=Pattern.compile("(?=.*[A-Z])[a-zA-Z0-9]{8,}");
+
+
     }
 
 }
