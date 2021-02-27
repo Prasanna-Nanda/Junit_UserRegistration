@@ -25,6 +25,12 @@ public class UserRegistrationMain implements UserRegisterationInterface {
 		Pattern emailIdRegExp=Pattern.compile("(^[a-z]{3,}.)|([a-z]{3,})@([a-z]{2,}.[a-z]{2})|(.[a-z]{2})");
 
 
+                System.out.println("Enter Mobile format");
+		Scanner scanner3=new Scanner(System.in);
+		String userInputMobileFormat=scanner3.next();
+		
+		Pattern mobileFormatRegExp=Pattern.compile("(^[a-z]{3,}.)|([a-z]{3,})@([a-z]{2,}.[a-z]{2})|(.[a-z]{2})");
+
 
     }
 
