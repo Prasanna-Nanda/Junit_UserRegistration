@@ -41,11 +41,20 @@ public class UserRegistrationMain implements UserRegisterationInterface {
 
 
 
-System.out.println("Enter Password one upper case:");
+                System.out.println("Enter Password one upper case:");
 		Scanner scanner5=new Scanner(System.in);
 		String userInputPasswordOneUpperCase=scanner5.next();
 		
 		Pattern passwordOneUpperCaseRegExp=Pattern.compile("(?=.*[A-Z])[a-zA-Z0-9]{8,}");
+
+
+
+               System.out.println("Enter Password one Numeric Case Number:");
+		Scanner scanner6=new Scanner(System.in);
+		String userInputPasswordOneNumericCase=scanner6.next();
+		
+		Pattern passwordOneNumericCaseRegExp=Pattern.compile("(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}");
+
 
 
     }
